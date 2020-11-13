@@ -1,5 +1,6 @@
 // Create dataset,
-// Insert into dataset
-// Query Dataset
+// Create table
+// Insert into table
+// Query Tables
 
 // Migration tools
