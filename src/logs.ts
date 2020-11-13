@@ -1,6 +1,6 @@
 import debug from "debug";
 
-const loggingPrefix = "hennessy";
+const loggingPrefix = "rasputia";
 
 /**
  * Use to log in general case

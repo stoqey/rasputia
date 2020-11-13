@@ -62,6 +62,7 @@
   },
   "homepage": "https://github.com/stoqey/rasputia#readme",
   "dependencies": {
+    "@google-cloud/bigquery": "^5.5.0",
     "@stoqey/finnhub": "^0.2.4",
     "@stoqey/ibkr": "^1.6.5",
     "debug": "^4.2.0",

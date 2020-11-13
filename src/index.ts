@@ -4,3 +4,5 @@
 // Query Tables
 
 // Migration tools
+
+export * from "./table";
