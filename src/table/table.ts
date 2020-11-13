@@ -1,5 +1,5 @@
-import { isEmpty } from "lodash";
 import { BigQuery } from "@google-cloud/bigquery";
+import { isEmpty } from "lodash";
 import { log } from "../logs";
 
 /**
@@ -51,12 +51,11 @@ export const createTable = async (
   schema: Field[] | string,
   options?: any,
 ): Promise<boolean | any> => {
-
   const bigquery = new BigQuery();
 
   const appliedOptions = {
     ...options,
-    schema: schema,
+    schema,
   };
 
   if (isEmpty(appliedOptions.location)) {
@@ -69,7 +68,6 @@ export const createTable = async (
       .dataset(datasetId)
       .createTable(tableId, appliedOptions);
     return table;
-
   } catch (error) {
     log("error creating table", error);
     return null;

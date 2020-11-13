@@ -29,3 +29,25 @@ export const createDataset = async (
     return null;
   }
 };
+
+/**
+ * Delete a dataset
+ * @param datasetId
+ */
+export const deleteDataset = async (datasetId: string): Promise<boolean> => {
+  const bigquery = new BigQuery();
+
+  try {
+    // Create a reference to the existing dataset
+    const dataset = bigquery.dataset(datasetId);
+
+    // Delete the dataset and its contents
+    await dataset.delete({ force: true });
+    log(`Dataset ${dataset.id} deleted.`);
+
+    return true;
+  } catch (error) {
+    log("error deleting the dataset", error);
+    return false;
+  }
+};
