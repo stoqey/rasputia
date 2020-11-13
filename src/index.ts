@@ -1,8 +1,10 @@
-// Create dataset,
-// Create table
-// Insert into table
-// Query Tables
+// Create dataset ✅
+// Create table ✅
+// Insert into table ✅
+// Query Tables ✅
 
-// Migration tools
+// TODO Migration tools
 
+export * from "./dataset";
 export * from "./table";
+export * from "./query";
