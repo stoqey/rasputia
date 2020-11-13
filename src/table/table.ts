@@ -73,3 +73,30 @@ export const createTable = async (
     return null;
   }
 };
+
+/**
+ * Delete a table
+ * @param datasetId
+ * @param tableId
+ */
+export const deleteTable = async (
+  datasetId: string,
+  tableId: string,
+): Promise<boolean> => {
+  const bigquery = new BigQuery();
+
+  try {
+    // Create a reference to the existing dataset
+    await bigquery
+      .dataset(datasetId)
+      .table(tableId)
+      .delete({ ignoreNotFound: true });
+
+    log(`Table ${tableId} deleted.`);
+
+    return true;
+  } catch (error) {
+    log("error table the dataset", error);
+    return false;
+  }
+};
