@@ -1,24 +1,24 @@
 <p align="center">
-   <h2>Hennessy 🍾🍾🍾</h2>
+   <h2>Rasputia 💋</h2>
 </p>
 
 <p align="center">
-    <img src="./docs/hennessy.png"></img> 
+    <img src="./docs/rasputia.png"></img> 
 </p>
 
 <p align="center">
-   Hennessy 🍾 - A very special Cognac (Market Data/IBKR/FINNHUB/BINANCE)
+   Rasputia 💋 - The Big Data Bitch
 </p>
 
 
 #### Features
-- Stocks,Forex,Crypto,Options e.t.c realtime websocket prices api
+- Create/Query/Insert BigQuery
 
 
 #### Providers
-   IBKR, Finnhub, Binance
+- BigQuery
 
 
 ## Documentation (to-do)
-- What is Hennessy
-- How to use Hennessy
+- What is Rasputia
+- How to use Rasputia

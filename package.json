@@ -1,7 +1,7 @@
 {
-  "name": "@stoqey/hennessy",
-  "version": "0.0.3",
-  "description": "Hennessy - A very special Cognac (Market Data/IBKR/FINNHUB/BINANCE)",
+  "name": "@stoqey/rasputia",
+  "version": "0.0.1",
+  "description": "Rasputia - The Big Data Bitch",
   "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -34,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/stoqey/hennessy.git"
+    "url": "git+ssh://git@github.com/stoqey/rasputia.git"
   },
   "keywords": [
     "ai",
@@ -58,9 +58,9 @@
   "author": "Stoqey Inc <support@stoqey.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/stoqey/hennessy/issues"
+    "url": "https://github.com/stoqey/rasputia/issues"
   },
-  "homepage": "https://github.com/stoqey/hennessy#readme",
+  "homepage": "https://github.com/stoqey/rasputia#readme",
   "dependencies": {
     "@stoqey/finnhub": "^0.2.4",
     "@stoqey/ibkr": "^1.6.5",
