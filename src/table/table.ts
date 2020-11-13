@@ -100,3 +100,29 @@ export const deleteTable = async (
     return false;
   }
 };
+
+/**
+ * Insert row into a table
+ * @param datasetId
+ * @param tableId
+ * @param rows - an array of rows
+ */
+export const tableInsert = async (
+  datasetId: string,
+  tableId: string,
+  rows: any[],
+): Promise<boolean> => {
+  const bigquery = new BigQuery();
+
+  try {
+    // Create a reference to the existing dataset
+    await bigquery.dataset(datasetId).table(tableId).insert(rows);
+
+    log(`TABLE: ${rows.length} items inserted into table ${tableId}`);
+
+    return true;
+  } catch (error) {
+    log("error inserting data into the table", error);
+    return false;
+  }
+};
